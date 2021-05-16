@@ -7,15 +7,15 @@ use Tomsgad\BeemAfrica\BeemAfricaServiceProvider;
 
 class TestCase extends Item
 {
-	public function setUp(): void
-	{
-		parent::setUp();
-	}
+    public function setUp(): void
+    {
+        parent::setUp();
+    }
 
-	protected function getPackageProviders($app)
-	{
-		return [
-			BeemAfricaServiceProvider::class,
-		];
-	}
+    protected function getPackageProviders($app)
+    {
+        return [
+            BeemAfricaServiceProvider::class,
+        ];
+    }
 }
