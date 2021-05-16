@@ -4,7 +4,6 @@ namespace Tomsgad\BeemAfrica\SMS;
 
 use Illuminate\Notifications\Notification;
 use Tomsgad\BeemAfrica\Exceptions\SMS\InvalidConfiguration;
-use Tomsgad\BeemAfrica\SMS\BeemAfrica;
 
 class BeemAfricaChannel
 {
@@ -40,12 +39,11 @@ class BeemAfricaChannel
 
             return $response;
         } catch (Exception $e) {
-            
         }
     }
 
     /**
-     * Get recipient phone number(s)
+     * Get recipient phone number(s).
      *
      * @param $notifiable
      * @return mixed
@@ -66,7 +64,7 @@ class BeemAfricaChannel
 
             return $arrayContacts;
         } else {
-        	throw InvalidConfiguration::routeForNotificationNotSet();
+            throw InvalidConfiguration::routeForNotificationNotSet();
         }
     }
 }

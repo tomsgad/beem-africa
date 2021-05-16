@@ -3,23 +3,22 @@
 namespace Tomsgad\BeemAfrica\Tests\Feature;
 
 use Tomsgad\BeemAfrica\SMS\BeemAfrica;
-use Tomsgad\BeemAfrica\SMS\BeemAfricaChannel;
 use Tomsgad\BeemAfrica\SMS\BeemAfricaMessage;
 use Tomsgad\BeemAfrica\Tests\TestCase;
 
 class SMSTest extends TestCase
 {
-	/** @test */
-	public function test_config_env()
-	{
-	    $this->app['config']->set(['app.BEEM_AFRICA_API_KEY' => 'TestAPIKey']);
-	    $this->app['config']->set(['app.BEEM_AFRICA_SECRET_KEY' => 'TestSecretKey']);
-	    $this->app['config']->set(['app.BEEM_AFRICA_SENDER_NAME' => 'Sender Name']);
+    /** @test */
+    public function test_config_env()
+    {
+        $this->app['config']->set(['app.BEEM_AFRICA_API_KEY' => 'TestAPIKey']);
+        $this->app['config']->set(['app.BEEM_AFRICA_SECRET_KEY' => 'TestSecretKey']);
+        $this->app['config']->set(['app.BEEM_AFRICA_SENDER_NAME' => 'Sender Name']);
 
-	    $this->assertEquals('Sender Name', $this->app['config']->get('app.BEEM_AFRICA_SENDER_NAME'));
-	    $this->assertEquals('TestAPIKey', $this->app['config']->get('app.BEEM_AFRICA_API_KEY'));
-	    $this->assertEquals('TestSecretKey', $this->app['config']->get('app.BEEM_AFRICA_SECRET_KEY'));
-	}
+        $this->assertEquals('Sender Name', $this->app['config']->get('app.BEEM_AFRICA_SENDER_NAME'));
+        $this->assertEquals('TestAPIKey', $this->app['config']->get('app.BEEM_AFRICA_API_KEY'));
+        $this->assertEquals('TestSecretKey', $this->app['config']->get('app.BEEM_AFRICA_SECRET_KEY'));
+    }
 
     /** @test */
     public function it_can_be_instantiate()
@@ -65,5 +64,5 @@ class SMSTest extends TestCase
         $message = (new BeemAfricaMessage())->secretKey('Test Secret Key');
 
         $this->assertEquals('Test Secret Key', $message->secretKey);
-    }    
+    }
 }
