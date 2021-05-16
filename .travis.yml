@@ -1,16 +1,16 @@
 language: php
 
 php:
-	- 7.4
-	- 8.0
+  - 7.4
+  - 8.0
 
 env:
-	matrix:
-		- COMPOSER_FLAGS="--prefer-lowest"
-		- COMPOSER_FLAGS=""
+  matrix:
+    - COMPOSER_FLAGS="--prefer-lowest"
+    - COMPOSER_FLAGS=""
 
 before_script:
-	- travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
-	- vendor/bin/phpunit
+  - vendor/bin/phpunit
