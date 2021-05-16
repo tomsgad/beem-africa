@@ -3,7 +3,6 @@
 namespace Tomsgad\BeemAfrica\SMS;
 
 use Spatie\Ray\Client;
-use Tomsgad\BeemAfrica\SMS\BeemAfricaMessage;
 
 class BeemAfrica
 {
@@ -68,7 +67,6 @@ class BeemAfrica
                 ]);
             }
         } catch (ConnectException $e) {
-        	
         }
 
         return $response;
