@@ -31,3 +31,9 @@ tools:
         excluded_dirs:
             - vendor
             - tests
+    nodes:
+        analysis:
+              tests:
+                override:
+                    - php-scrutinizer-run
+                    idle_timeout: 900
