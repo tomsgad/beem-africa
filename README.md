@@ -2,7 +2,7 @@
 <h2 align="center">Effortless Beem Africa integrations with Laravel</h2>
 
 <p align="center">
-    <img src="https://beem.africa/wp-content/uploads/2020/12/Beem-menu-logo-01.svg" height="200">
+    <img src="https://beem.africa/wp-content/uploads/2020/12/Beem-menu-logo-02.svg" height="200">
 </p>
 
 <p align="center">
