@@ -10,6 +10,7 @@
     <a href="https://travis-ci.com/github/tomsgad/beem-africa"><img src="https://img.shields.io/travis/tomsgad/beem-africa/master.svg?style=flat-square" alt="Build Status"></a>
     <a href="https://styleci.io/repos/367945131"><img src="https://styleci.io/repos/367945131/shield" alt="StyleCI"></a>
     <a href="https://scrutinizer-ci.com/g/tomsgad/beem-africa"><img src="https://img.shields.io/scrutinizer/g/tomsgad/beem-africa.svg?style=flat-square" alt="Quality Score"></a>
+    <a href="https://github.com/tomsgad/beem-africa/actions"><img src="https://github.com/github/docs/actions/workflows/main.yml/badge.svg" alt="Github Workflow"></a>
     <a href="https://packagist.org/packages/tomsgad/beem-africa"><img src="https://img.shields.io/packagist/dt/tomsgad/beem-africa.svg?style=flat-square" alt="Total Downloads"></a>
 </p>
 
