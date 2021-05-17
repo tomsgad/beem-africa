@@ -2,7 +2,7 @@
 
 namespace Tomsgad\BeemAfrica\SMS;
 
-use Spatie\Ray\Client;
+use GuzzleHttp\Client;
 
 class BeemAfrica
 {
