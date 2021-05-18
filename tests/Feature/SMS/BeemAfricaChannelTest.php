@@ -3,7 +3,6 @@
 namespace Tomsgad\BeemAfrica\Tests\Feature\SMS;
 
 use Illuminate\Notifications\Notifiable;
-use Tomsgad\BeemAfrica\Exceptions\SMS\InvalidConfiguration;
 use Tomsgad\BeemAfrica\SMS\BeemAfrica;
 use Tomsgad\BeemAfrica\SMS\BeemAfricaChannel;
 use Tomsgad\BeemAfrica\Tests\TestCase;
@@ -34,7 +33,7 @@ class BeemAfricaChannelTest extends TestCase
     /** @test */
     public function it_can_throw_exception_when_no_route_for_beem_africa()
     {
-        $this->expectException("Error");
+        $this->expectException('Error');
 
         $this->beemAfricaChannel->getRecipients(new NotifiableWithRouteForBeemAfrica());
     }
