@@ -26,7 +26,7 @@ composer require tomsgad/beem-africa
 
 ## Usage
 
-Head over to the [Documentation](https://tomsgad.github.io/beem-africa) of this package.
+Head over to the [Documentation](https://beem-africa-docs.herokuapp.com) of this package.
 
 ### Testing
 
