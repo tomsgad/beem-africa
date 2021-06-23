@@ -4,20 +4,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | API Credentials
+    | Beem SMS API Credentials
     |--------------------------------------------------------------------------
     |
-    | If you're seeting API credentials for the entire app, change these settings. Get your
-    | credentials from https://sms.beem.africa/#!/dashboard/profile/authentication | 'Authentication Information'.
+    | Here we set api key and secret key that will be used to send the sms. Get your
+    | credentials from https://sms.beem.africa/#!/dashboard/profile/authentication 
     |
     */
 
-    'api_key'    => function_exists('env') ? env('BEEM_API_KEY', '') : '',
-    'secret_key' => function_exists('env') ? env('BEEM_SECRET_KEY', '') : '',
+    'sms_api_key'    => function_exists('env') ? env('BEEM_SMS_API_KEY', '') : '',
+    'sms_secret_key' => function_exists('env') ? env('BEEM_SMS_SECRET_KEY', '') : '',
 
     /*
     |--------------------------------------------------------------------------
-    | Beem Africa SMS Sender Name
+    | Beem SMS Sender Name
     |--------------------------------------------------------------------------
     |
     | Here we set a sender name that will be used to send the sms. Default
@@ -26,5 +26,5 @@ return [
     |
     */
 
-    'sender_name' => function_exists('env') ? env('BEEM_SENDER_NAME', '') : '',
+    'sms_sender_name' => function_exists('env') ? env('BEEM_SMS_SENDER_NAME', '') : '',
 ];

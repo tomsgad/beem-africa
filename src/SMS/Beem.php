@@ -21,9 +21,9 @@ class Beem
      */
     public function __construct(array $config)
     {
-        $this->apiKey = $config['api_key'];
-        $this->secretKey = $config['secret_key'];
-        $this->senderName = $config['sender_name'];
+        $this->apiKey = $config['sms_api_key'];
+        $this->secretKey = $config['sms_secret_key'];
+        $this->senderName = $config['sms_sender_name'];
     }
 
     /**

@@ -20,9 +20,9 @@ class BeemChannelTest extends TestCase
         parent::setUp();
 
         $testConfig = [
-            'sender_name' => 'INFO',
-            'api_key' => 'test_api_key',
-            'secret_key' => 'test_secret_key',
+            'sms_sender_name' => 'INFO',
+            'sms_api_key' => 'test_api_key',
+            'sms_secret_key' => 'test_secret_key',
         ];
 
         $this->beem = new Beem($testConfig);

@@ -9,24 +9,24 @@ class ConfigTest extends TestCase
     /** @test */
     public function it_can_set_the_sender_name()
     {
-        $this->app['config']->set(['app.BEEM_SENDER_NAME' => 'INFO']);
+        $this->app['config']->set(['app.BEEM_SMS_SENDER_NAME' => 'INFO']);
 
-        $this->assertEquals('INFO', $this->app['config']->get('app.BEEM_SENDER_NAME'));
+        $this->assertEquals('INFO', $this->app['config']->get('app.BEEM_SMS_SENDER_NAME'));
     }
 
     /** @test */
     public function it_can_set_the_api_key()
     {
-        $this->app['config']->set(['app.BEEM_API_KEY' => 'test_api_key']);
+        $this->app['config']->set(['app.BEEM_SMS_API_KEY' => 'test_api_key']);
 
-        $this->assertEquals('test_api_key', $this->app['config']->get('app.BEEM_API_KEY'));
+        $this->assertEquals('test_api_key', $this->app['config']->get('app.BEEM_SMS_API_KEY'));
     }
 
     /** @test */
     public function it_can_set_the_secret_key()
     {
-        $this->app['config']->set(['app.BEEM_SECRET_KEY' => 'test_secret_key']);
+        $this->app['config']->set(['app.BEEM_SMS_SECRET_KEY' => 'test_secret_key']);
 
-        $this->assertEquals('test_secret_key', $this->app['config']->get('app.BEEM_SECRET_KEY'));
+        $this->assertEquals('test_secret_key', $this->app['config']->get('app.BEEM_SMS_SECRET_KEY'));
     }
 }
