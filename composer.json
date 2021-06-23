@@ -1,10 +1,12 @@
 {
-    "name": "tomsgad/beem-africa",
+    "name": "tomsgad/beem",
     "description": "Complete Laravel Package for Beem API",
     "keywords": [
         "tomsgad",
         "laravel",
-        "beem-africa"
+        "beem",
+        "beem-africa",
+        "beem-api"
     ],
     "homepage": "https://github.com/tomsgad/beem",
     "license": "MIT",
