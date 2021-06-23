@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here we set api key and secret key that will be used to send the sms. Get your
-    | credentials from https://sms.beem.africa/#!/dashboard/profile/authentication 
+    | credentials from https://sms.beem.africa/#!/dashboard/profile/authentication
     |
     */
 
