@@ -1,6 +1,6 @@
 <?php
 
-namespace Tomsgad\BeemAfrica\Exceptions\SMS;
+namespace Tomsgad\Beem\Exceptions\SMS;
 
 use Exception;
 
@@ -12,7 +12,7 @@ class CouldNotSendNotification extends Exception
      */
     public static function serviceRespondedWithAnError(string $error): self
     {
-        return new static("BeemAfrica service responded with an error: {$error}");
+        return new static("Beem service responded with an error: {$error}");
     }
 
     /**

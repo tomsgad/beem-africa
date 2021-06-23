@@ -1,12 +1,12 @@
 {
     "name": "tomsgad/beem-africa",
-    "description": "Complete Laravel Package for Beem-Africa API",
+    "description": "Complete Laravel Package for Beem API",
     "keywords": [
         "tomsgad",
         "laravel",
         "beem-africa"
     ],
-    "homepage": "https://github.com/tomsgad/beem-africa",
+    "homepage": "https://github.com/tomsgad/beem",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tomsgad\\BeemAfrica\\": "src"
+            "Tomsgad\\Beem\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tomsgad\\BeemAfrica\\Tests\\": "tests"
+            "Tomsgad\\Beem\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -48,7 +48,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tomsgad\\BeemAfrica\\BeemAfricaServiceProvider"
+                "Tomsgad\\Beem\\BeemServiceProvider"
             ]
         }
     }

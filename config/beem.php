@@ -12,8 +12,8 @@ return [
     |
     */
 
-    'api_key'    => function_exists('env') ? env('BEEM_AFRICA_API_KEY', '') : '',
-    'secret_key' => function_exists('env') ? env('BEEM_AFRICA_SECRET_KEY', '') : '',
+    'api_key'    => function_exists('env') ? env('BEEM_API_KEY', '') : '',
+    'secret_key' => function_exists('env') ? env('BEEM_SECRET_KEY', '') : '',
 
     /*
     |--------------------------------------------------------------------------
@@ -26,5 +26,5 @@ return [
     |
     */
 
-    'sender_name' => function_exists('env') ? env('BEEM_AFRICA_SENDER_NAME', '') : '',
+    'sender_name' => function_exists('env') ? env('BEEM_SENDER_NAME', '') : '',
 ];

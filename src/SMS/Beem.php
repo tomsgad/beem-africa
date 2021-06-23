@@ -1,10 +1,10 @@
 <?php
 
-namespace Tomsgad\BeemAfrica\SMS;
+namespace Tomsgad\Beem\SMS;
 
 use GuzzleHttp\Client;
 
-class BeemAfrica
+class Beem
 {
     protected $apiUrl = 'https://apisms.beem.africa/v1/send';
 
@@ -32,7 +32,7 @@ class BeemAfrica
      * @param BeemAfricaMessage $message
      * @param $recipients
      */
-    public function sendMessage(BeemAfricaMessage $message, $recipients)
+    public function sendMessage(BeemMessage $message, $recipients)
     {
         $client = new Client;
 

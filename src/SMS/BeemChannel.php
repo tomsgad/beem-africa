@@ -1,22 +1,22 @@
 <?php
 
-namespace Tomsgad\BeemAfrica\SMS;
+namespace Tomsgad\Beem\SMS;
 
 use Illuminate\Notifications\Notification;
-use Tomsgad\BeemAfrica\Exceptions\SMS\InvalidConfiguration;
+use Tomsgad\Beem\Exceptions\SMS\InvalidConfiguration;
 
-class BeemAfricaChannel
+class BeemChannel
 {
-    public $beemAfrica;
+    public $beem;
 
     /**
-     * Beem Africa Channel Constructor.
+     * Beem  Channel Constructor.
      *
-     * @param BeemAfrica $beemAfrica
+     * @param Beem $beem
      */
-    public function __construct(BeemAfrica $beemAfrica)
+    public function __construct(Beem $beem)
     {
-        $this->beemAfrica = $beemAfrica;
+        $this->beem = $beem;
     }
 
     /**
@@ -31,11 +31,11 @@ class BeemAfricaChannel
      */
     public function send($notifiable, Notification $notification)
     {
-        $message = $notification->toBeemAfrica($notifiable);
+        $message = $notification->toBeem($notifiable);
         $recipients = $this->getRecipients($notifiable);
 
         try {
-            $response = $this->beemAfrica->sendMessage($message, $recipients);
+            $response = $this->beem->sendMessage($message, $recipients);
 
             return $response;
         } catch (Exception $e) {
@@ -51,9 +51,9 @@ class BeemAfricaChannel
      */
     public function getRecipients($notifiable)
     {
-        if ($notifiable->routeNotificationFor('beem-africa')) {
+        if ($notifiable->routeNotificationFor('beem')) {
             $arrayContacts = [];
-            $phoneNumbers = $notifiable->routeNotificationFor('beem-africa');
+            $phoneNumbers = $notifiable->routeNotificationFor('beem');
 
             for ($i = 0; $i < count($phoneNumbers); $i++) {
                 array_push($arrayContacts, [

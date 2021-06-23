@@ -1,9 +1,9 @@
 <?php
 
-namespace Tomsgad\BeemAfrica\Tests;
+namespace Tomsgad\Beem\Tests;
 
 use Orchestra\Testbench\TestCase as Item;
-use Tomsgad\BeemAfrica\BeemAfricaServiceProvider;
+use Tomsgad\Beem\BeemServiceProvider;
 
 class TestCase extends Item
 {
@@ -15,7 +15,7 @@ class TestCase extends Item
     protected function getPackageProviders($app)
     {
         return [
-            BeemAfricaServiceProvider::class,
+            BeemServiceProvider::class,
         ];
     }
 }

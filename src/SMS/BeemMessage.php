@@ -1,8 +1,8 @@
 <?php
 
-namespace Tomsgad\BeemAfrica\SMS;
+namespace Tomsgad\Beem\SMS;
 
-class BeemAfricaMessage
+class BeemMessage
 {
     public $content = '';
 
@@ -25,7 +25,7 @@ class BeemAfricaMessage
     }
 
     /**
-     * Beem Africa Message constructor.
+     * Beem Message constructor.
      *
      * @param string $content
      */

@@ -1,5 +1,5 @@
-<h1 align="center">Laravel Package for Beem Africa</h1>
-<h2 align="center">Effortless Beem Africa integrations with Laravel</h2>
+<h1 align="center">Laravel Package for Beem</h1>
+<h2 align="center">Effortless Beem integrations with Laravel</h2>
 
 <p align="center">
     <img src="https://beem.africa/wp-content/uploads/2020/12/Beem-menu-logo-02.svg" height="200">
@@ -14,7 +14,7 @@
     <a href="https://packagist.org/packages/tomsgad/beem-africa"><img src="https://img.shields.io/packagist/dt/tomsgad/beem-africa.svg?style=flat-square" alt="Total Downloads"></a>
 </p>
 
-This package provides a simple and crisp way to access the Beem Africa API endpoints, query data with Laravel.
+This package provides a simple and crisp way to access the Beem API endpoints, query data with Laravel.
 
 ## Installation
 
