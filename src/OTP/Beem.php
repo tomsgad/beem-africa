@@ -59,8 +59,8 @@ class Beem
                         'Accept' => 'application/json',
                     ],
                     'json' => [
-                        'appId' => $otp->appId,
-                        'msisdn' => $recipients,
+                        'appId' => $this->appId,
+                        'msisdn' => $recipient,
                     ],
                 ]);
             }
