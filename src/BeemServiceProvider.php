@@ -5,7 +5,7 @@ namespace Tomsgad\Beem;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\ServiceProvider;
 use Tomsgad\Beem\SMS\Beem;
-use Tomsgad\Beem\SMS\BeemChannel as BeemSmsChannel;
+use Tomsgad\Beem\SMS\BeemChannel;
 
 class BeemServiceProvider extends ServiceProvider
 {
