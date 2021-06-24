@@ -65,8 +65,8 @@ class Beem
                 ]);
             }
         } catch (ConnectException $e) {
-
         }
+
         return $response;
     }
 
@@ -108,8 +108,8 @@ class Beem
                 ]);
             }
         } catch (ConnectException $e) {
-
         }
+
         return $response;
     }
 }
