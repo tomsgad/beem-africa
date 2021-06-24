@@ -24,7 +24,7 @@ class BeemOtp
     }
 
     /**
-     * Get application id for the OTP request
+     * Get application id for the OTP request.
      *
      * @return string
      */
