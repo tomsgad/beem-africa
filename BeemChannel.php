@@ -19,7 +19,7 @@ class BeemChannel
     /**
      * Request PIN .
      *
-     * @param  integer  $recipient
+     * @param  int  $recipient
      * @param BeemOtp $otp
      *
      * @throws Exception
@@ -33,7 +33,6 @@ class BeemChannel
 
             return $response;
         } catch (Exception $e) {
-        	
         }
     }
 }
