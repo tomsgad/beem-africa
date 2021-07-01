@@ -26,10 +26,10 @@ class BeemChannel
      *
      * @return array|null
      */
-    public function requestPin($otp, $recipient)
+    public function requestPin($recipient)
     {
         try {
-            $response = $this->beem->requestPin($otp, $recipient);
+            $response = $this->beem->requestPin($recipient);
 
             return $response;
         } catch (Exception $e) {
