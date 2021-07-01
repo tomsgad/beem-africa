@@ -51,7 +51,10 @@
         "laravel": {
             "providers": [
                 "Tomsgad\\Beem\\BeemServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "OTP": "Tomsgad\\Beem\\Facades\\OTP"
+            }
         }
     }
 }

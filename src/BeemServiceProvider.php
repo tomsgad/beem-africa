@@ -2,10 +2,13 @@
 
 namespace Tomsgad\Beem;
 
-use Illuminate\Support\Facades\Notification;
+use Tomsgad\Beem\OTP\BeemOtp;
+use Tomsgad\Beem\OTP\Beem as OTP;
+use Tomsgad\Beem\OTP\BeemChannel as BeemOtpChannel;
+use Tomsgad\Beem\SMS\Beem as SMS;
+use Tomsgad\Beem\SMS\BeemChannel as BeemSmsChannel;
 use Illuminate\Support\ServiceProvider;
-use Tomsgad\Beem\SMS\Beem;
-use Tomsgad\Beem\SMS\BeemChannel;
+use Illuminate\Support\Facades\Notification;
 
 class BeemServiceProvider extends ServiceProvider
 {
@@ -29,13 +32,23 @@ class BeemServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/beem.php', 'beem');
 
         Notification::extend('beem', function ($app) {
-            return new BeemChannel(
-                $this->app->make(Beem::class)
+            return new BeemSmsChannel(
+                $this->app->make(SMS::class)
             );
         });
 
-        $this->app->bind(Beem::class, static function ($app) {
-            return new Beem($app['config']['beem']);
+        $this->app->bind('otp', function($app) {
+		    return new BeemOtpChannel(
+		    	$this->app->make(OTP::class)
+		    );
+		});
+
+        $this->app->bind(SMS::class, static function ($app) {
+            return new SMS($app['config']['beem']);
+        });
+
+        $this->app->bind(OTP::class, static function ($app) {
+            return new OTP($app['config']['beem']);
         });
     }
 }
