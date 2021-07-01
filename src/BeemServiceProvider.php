@@ -2,13 +2,12 @@
 
 namespace Tomsgad\Beem;
 
-use Tomsgad\Beem\OTP\BeemOtp;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\ServiceProvider;
 use Tomsgad\Beem\OTP\Beem as OTP;
 use Tomsgad\Beem\OTP\BeemChannel as BeemOtpChannel;
 use Tomsgad\Beem\SMS\Beem as SMS;
 use Tomsgad\Beem\SMS\BeemChannel as BeemSmsChannel;
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Notification;
 
 class BeemServiceProvider extends ServiceProvider
 {
@@ -37,11 +36,11 @@ class BeemServiceProvider extends ServiceProvider
             );
         });
 
-        $this->app->bind('otp', function($app) {
-		    return new BeemOtpChannel(
-		    	$this->app->make(OTP::class)
-		    );
-		});
+        $this->app->bind('otp', function ($app) {
+            return new BeemOtpChannel(
+                $this->app->make(OTP::class)
+            );
+        });
 
         $this->app->bind(SMS::class, static function ($app) {
             return new SMS($app['config']['beem']);

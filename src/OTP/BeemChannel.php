@@ -33,7 +33,6 @@ class BeemChannel
 
             return $response;
         } catch (Exception $e) {
-        	
         }
     }
 }
