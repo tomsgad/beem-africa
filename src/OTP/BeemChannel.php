@@ -33,7 +33,7 @@ class BeemChannel
 
             return $response;
         } catch (Exception $error) {
-        	return $error;
+            return $error;
         }
     }
 
@@ -50,12 +50,12 @@ class BeemChannel
      */
     public function verifyPin($otp, $pinId, $pin)
     {
-    	try {
+        try {
             $response = $this->beem->verifyPin($otp, $pinId, $pin);
 
             return $response;
         } catch (Exception $error) {
-        	return $error;
+            return $error;
         }
     }
 }
