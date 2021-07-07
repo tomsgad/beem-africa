@@ -11,7 +11,7 @@ return [
     | credentials from https://sms.beem.africa/#!/dashboard/profile/authentication
     |
     */
-
+    
     'sms_api_key'    => function_exists('env') ? env('BEEM_SMS_API_KEY', '') : '',
     'sms_secret_key' => function_exists('env') ? env('BEEM_SMS_SECRET_KEY', '') : '',
 
@@ -52,4 +52,17 @@ return [
     */
 
     'otp_app_id' => function_exists('env') ? env('BEEM_OTP_APP_ID', '') : '',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Beem Airtime API Credentials
+    |--------------------------------------------------------------------------
+    |
+    | Here we set api key and secret key that will be used to send the airtime. Get your
+    | credentials from https://airtime.beem.africa/#!/dashboard/profile/authentication
+    |
+    */
+
+    'airtime_api_key'    => function_exists('env') ? env('BEEM_AIRTIME_API_KEY', '') : '',
+    'airtime_secret_key' => function_exists('env') ? env('BEEM_AIRTIME_SECRET_KEY', '') : '',
 ];
