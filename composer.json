@@ -1,14 +1,15 @@
 {
-    "name": "tomsgad/beem",
-    "description": "Complete Laravel Package for Beem API",
+    "name": "tomsgad/laravel-beem",
+    "description": "Effortless Beem integrations with Laravel",
     "keywords": [
         "tomsgad",
         "laravel",
+        "laravel-beem"
         "beem",
         "beem-africa",
         "beem-api"
     ],
-    "homepage": "https://github.com/tomsgad/beem",
+    "homepage": "https://github.com/tomsgad/laravel-beem",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -51,7 +52,10 @@
         "laravel": {
             "providers": [
                 "Tomsgad\\Beem\\BeemServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "OTP": "Tomsgad\\Beem\\Facades\\OTP"
+            }
         }
     }
 }
