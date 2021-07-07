@@ -7,7 +7,7 @@ class BeemChannel
     public $beem;
 
     /**
-     * Beem  Channel Constructor.
+     * Beem Channel Constructor.
      *
      * @param Beem $beem
      */
@@ -17,22 +17,45 @@ class BeemChannel
     }
 
     /**
-     * Request PIN .
+     * Request PIN.
      *
-     * @param  int  $recipient
      * @param BeemOtp $otp
+     * @param string $recipient
      *
      * @throws Exception
      *
      * @return array|null
      */
-    public function requestPin($recipient)
+    public function requestPin($otp, $recipient)
     {
         try {
-            $response = $this->beem->requestPin($recipient);
+            $response = $this->beem->requestPin($otp, $recipient);
 
             return $response;
-        } catch (Exception $e) {
+        } catch (Exception $error) {
+        	return $error;
+        }
+    }
+
+    /**
+     * Verify PIN.
+     *
+     * @param BeemOtp $otp
+     * @param string $pinId
+     * @param string $pin
+     *
+     * @throws Exception
+     *
+     * @return array|null
+     */
+    public function verifyPin($otp, $pinId, $pin)
+    {
+    	try {
+            $response = $this->beem->verifyPin($otp, $pinId, $pin);
+
+            return $response;
+        } catch (Exception $error) {
+        	return $error;
         }
     }
 }
