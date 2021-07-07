@@ -1,6 +1,6 @@
 <!--
 PLEASE READ: FILLING IN THE TEMPLATE IS REQUIRED!
-PLEASE CHOOSE AN ISSUE TYPE FROM https://github.com/tomsgad/beem-africa/issues/new/choose
+PLEASE CHOOSE AN ISSUE TYPE FROM https://github.com/tomsgad/laravel-beem/issues/new/choose
 Issues that have not been filled in using the issue template will be closed.
 -->
 
@@ -10,7 +10,7 @@ Issues that have not been filled in using the issue template will be closed.
 Put an X between the brackets if you have done the following:
 -->
 
-* [ ] Able to reproduce the behaviour outside of your code, the problem is isolated to Laravel Excel.
+* [ ] Able to reproduce the behaviour outside of your code, the problem is isolated to Laravel Beem.
 * [ ] Checked that your issue isn't already filed.
 * [ ] Checked if no PR was submitted that fixes this problem.
 * [ ] Filled in the entire issue template
@@ -21,7 +21,7 @@ Put an X between the brackets if you have done the following:
 
 * PHP version: <!-- put your FULL (including patch number) PHP version here -->
 * Laravel version: <!-- put your FULL (including patch number) Laravel version here -->
-* Package version: <!-- put FULL (including patch number) Laravel Excel package version here -->
+* Package version: <!-- put FULL (including patch number) Laravel Beem package version here -->
 
 ### Description
 
@@ -29,7 +29,7 @@ Put an X between the brackets if you have done the following:
 
 ### Steps to Reproduce
 
-<!-- How can this issue be reproduced? Provide an Excel file or reproduction repository to help us reproduce the issue easily.  -->
+<!-- How can this issue be reproduced? Provide an Beem file or reproduction repository to help us reproduce the issue easily.  -->
 
 **Expected behavior:**
 

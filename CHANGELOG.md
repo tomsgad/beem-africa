@@ -2,6 +2,10 @@
 
 All notable changes to `beem-africa` will be documented in this file
 
+## Version 1.2.0
+* OTP Feature Added
+* Change name from Beem to Laravel Beem
+
 ## Version 1.1.2
 * Prep config files for the rest of the beem api
 
