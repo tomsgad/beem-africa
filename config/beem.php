@@ -11,7 +11,7 @@ return [
     | credentials from https://sms.beem.africa/#!/dashboard/profile/authentication
     |
     */
-    
+
     'sms_api_key'    => function_exists('env') ? env('BEEM_SMS_API_KEY', '') : '',
     'sms_secret_key' => function_exists('env') ? env('BEEM_SMS_SECRET_KEY', '') : '',
 
