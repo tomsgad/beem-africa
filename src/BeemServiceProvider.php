@@ -2,14 +2,13 @@
 
 namespace Tomsgad\Beem;
 
-use Tomsgad\Beem\OTP\Beem as OTP;
-use Tomsgad\Beem\SMS\Beem as SMS;
-use Illuminate\Support\ServiceProvider;
-use Tomsgad\Beem\Airtime\Beem as AirtimeAirtime;
 use Illuminate\Support\Facades\Notification;
-use Tomsgad\Beem\OTP\BeemChannel as BeemOtpChannel;
-use Tomsgad\Beem\SMS\BeemChannel as BeemSmsChannel;
+use Illuminate\Support\ServiceProvider;
 use Tomsgad\Beem\Airtime\BeemChannel as BeemAirtimeChannel;
+use Tomsgad\Beem\OTP\Beem as OTP;
+use Tomsgad\Beem\OTP\BeemChannel as BeemOtpChannel;
+use Tomsgad\Beem\SMS\Beem as SMS;
+use Tomsgad\Beem\SMS\BeemChannel as BeemSmsChannel;
 
 class BeemServiceProvider extends ServiceProvider
 {
@@ -30,7 +29,7 @@ class BeemServiceProvider extends ServiceProvider
      */
     public function register()
     {
-    	/* Config File */
+        /* Config File */
         $this->mergeConfigFrom(__DIR__.'/../config/beem.php', 'beem');
 
         /* SMS Feature */
