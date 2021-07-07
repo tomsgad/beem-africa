@@ -68,7 +68,7 @@ class Beem
             return $error;
         }
 
-        return $response;
+        return $response->getBody()->getContents();
     }
 
     /**
@@ -112,6 +112,6 @@ class Beem
             return $error;
         }
 
-        return $response;
+        return $response->getBody()->getContents();
     }
 }
