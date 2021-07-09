@@ -69,14 +69,14 @@ class Beem
                 ]);
             }
         } catch (ConnectException $error) {
-        	return $error;
+            return $error;
         }
 
         return $response->getBody()->getContents();
     }
 
     /**
-     * Check Beem Balance
+     * Check Beem Balance.
      *
      * @param BeemSms $sms
      */
@@ -86,7 +86,7 @@ class Beem
 
         try {
             if ($sms->apiKey && $sms->secretKey) {
-                $response = $client->post($this->checkBalanceUrl, [
+                $response = $client->get($this->checkBalanceUrl, [
                     'auth' => [$sms->apiKey, $sms->secretKey],
                     'headers' => [
                         'Content-Type' => 'application/json',
@@ -94,7 +94,7 @@ class Beem
                     ],
                 ]);
             } else {
-                $response = $client->post($this->checkBalanceUrl, [
+                $response = $client->get($this->checkBalanceUrl, [
                     'auth' => [$this->apiKey, $this->secretKey],
                     'headers' => [
                         'Content-Type' => 'application/json',

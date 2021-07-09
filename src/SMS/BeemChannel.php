@@ -43,6 +43,26 @@ class BeemChannel
     }
 
     /**
+     * Check Balance
+     *
+     * @param BeemSms $sms
+     *
+     * @throws Exception
+     *
+     * @return array|null
+     */
+    public function checkBalance($sms)
+    {
+        try {
+            $response = $this->beem->checkBalance($sms);
+
+            return $response;
+        } catch (Exception $error) {
+            return $error;
+        }
+    }
+
+    /**
      * Get recipient phone number(s).
      *
      * @param $notifiable
