@@ -43,7 +43,7 @@ class BeemChannel
     }
 
     /**
-     * Check Balance
+     * Check Balance.
      *
      * @param BeemSms $sms
      *
