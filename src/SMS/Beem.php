@@ -69,14 +69,14 @@ class Beem
                 ]);
             }
         } catch (ConnectException $error) {
-        	return $error;
+            return $error;
         }
 
         return $response->getBody()->getContents();
     }
 
     /**
-     * Check Beem Balance
+     * Check Beem Balance.
      *
      * @param BeemSms $sms
      */
