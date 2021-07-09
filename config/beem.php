@@ -52,4 +52,17 @@ return [
     */
 
     'otp_app_id' => function_exists('env') ? env('BEEM_OTP_APP_ID', '') : '',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Beem Airtime API Credentials
+    |--------------------------------------------------------------------------
+    |
+    | Here we set api key and secret key that will be used to send the airtime. Get your
+    | credentials from https://airtime.beem.africa/#!/dashboard/profile/authentication
+    |
+    */
+
+    'airtime_api_key'    => function_exists('env') ? env('BEEM_AIRTIME_API_KEY', '') : '',
+    'airtime_secret_key' => function_exists('env') ? env('BEEM_AIRTIME_SECRET_KEY', '') : '',
 ];
