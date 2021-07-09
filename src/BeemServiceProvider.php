@@ -40,6 +40,12 @@ class BeemServiceProvider extends ServiceProvider
             );
         });
 
+        $this->app->bind('sms', function ($app) {
+            return new BeemSmsChannel(
+                $this->app->make(SMS::class)
+            );
+        });
+
         $this->app->bind(SMS::class, static function ($app) {
             return new SMS($app['config']['beem']);
         });

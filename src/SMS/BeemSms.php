@@ -2,7 +2,7 @@
 
 namespace Tomsgad\Beem\SMS;
 
-class BeemMessage
+class BeemSms
 {
     public $content = '';
 

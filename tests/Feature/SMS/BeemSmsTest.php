@@ -2,15 +2,15 @@
 
 namespace Tomsgad\Beem\Tests\Feature\SMS;
 
-use Tomsgad\Beem\SMS\BeemMessage;
+use Tomsgad\Beem\SMS\BeemSms;
 use Tomsgad\Beem\Tests\TestCase;
 
-class BeemMessageTest extends TestCase
+class BeemSmsTest extends TestCase
 {
     /** @test */
     public function it_can_set_the_content(): void
     {
-        $message = (new BeemMessage())->content('hello');
+        $message = (new BeemSms())->content('hello');
 
         $this->assertEquals('hello', $message->content);
     }
@@ -18,7 +18,7 @@ class BeemMessageTest extends TestCase
     /** @test */
     public function it_can_set_the_sender(): void
     {
-        $message = (new BeemMessage())->sender('Beem Africa');
+        $message = (new BeemSms())->sender('Beem Africa');
 
         $this->assertEquals('Beem Africa', $message->sender);
     }
@@ -26,7 +26,7 @@ class BeemMessageTest extends TestCase
     /** @test */
     public function it_can_set_the_api_key(): void
     {
-        $message = (new BeemMessage())->apiKey('Test API Key');
+        $message = (new BeemSms())->apiKey('Test API Key');
 
         $this->assertEquals('Test API Key', $message->apiKey);
     }
@@ -34,7 +34,7 @@ class BeemMessageTest extends TestCase
     /** @test */
     public function it_can_set_the_secret_key(): void
     {
-        $message = (new BeemMessage())->secretKey('Test Secret Key');
+        $message = (new BeemSms())->secretKey('Test Secret Key');
 
         $this->assertEquals('Test Secret Key', $message->secretKey);
     }
