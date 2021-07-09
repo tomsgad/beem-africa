@@ -44,7 +44,7 @@ class Beem
                     'json' => [
                         'dest_addr' => $recipient,
                         'amount' => $amount,
-                        'reference_id' => str_random(6),
+                        'reference_id' => random_int(100000, 999999),
                     ],
                 ]);
             } else {
@@ -57,7 +57,7 @@ class Beem
                     'json' => [
                         'dest_addr' => $recipient,
                         'amount' => $amount,
-                        'reference_id' => str_random(6),
+                        'reference_id' => random_int(100000, 999999),
                     ],
                 ]);
             }

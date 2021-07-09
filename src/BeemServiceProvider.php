@@ -4,6 +4,7 @@ namespace Tomsgad\Beem;
 
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\ServiceProvider;
+use Tomsgad\Beem\Airtime\Beem as Airtime;
 use Tomsgad\Beem\Airtime\BeemChannel as BeemAirtimeChannel;
 use Tomsgad\Beem\OTP\Beem as OTP;
 use Tomsgad\Beem\OTP\BeemChannel as BeemOtpChannel;
